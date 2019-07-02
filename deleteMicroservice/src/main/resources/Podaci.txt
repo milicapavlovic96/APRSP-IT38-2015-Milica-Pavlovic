@@ -1,0 +1,74 @@
+﻿insert into nacionalnost(id,naziv,skracenica)
+		values(1,'Serbian','srb');
+insert into nacionalnost(id,naziv,skracenica)
+		values(2,'German','ger');
+insert into nacionalnost(id,naziv,skracenica)
+		values(3,'Italian','ita');
+insert into nacionalnost(id,naziv,skracenica)
+		values(4,'French','fra');
+insert into nacionalnost(id,naziv,skracenica)
+		values(5,'Netherlans','net');
+insert into nacionalnost(id,naziv,skracenica)
+		values(6,'Spanish','esp');
+insert into nacionalnost(id,naziv,skracenica)
+		values(7,'Brazilian','bra');
+insert into nacionalnost(id,naziv,skracenica)
+		values(8,'Swedish','swe');
+insert into nacionalnost(id,naziv,skracenica)
+		values(9,'Portugal','por');
+
+
+insert into liga(id,naziv,oznaka)
+		values(1,'Premier League','PG');
+insert into liga(id,naziv,oznaka)
+		values(2,'Scottish Premiership','SP');
+insert into liga(id,naziv,oznaka)
+		values(3,'Spanish La Liga','SLL');
+insert into liga(id,naziv,oznaka)
+		values(4,'German Bundesliga','GB');
+insert into liga(id,naziv,oznaka)
+		values(5,'Dutch Eredvisie','SA');
+
+
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(1,'FK Crvena zvezda',to_date('04.03.1945.', 'dd.mm.yyyy.'),'Beograd',1);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(2,'FK Partizan',to_date('04.10.1945.', 'dd.mm.yyyy.'),'Beograd',1);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(3,'Manchester United F.C.',to_date('01.01.1878.', 'dd.mm.yyyy.'),'Manchester',2);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(4,'Tottenham Hotspur F.C.',to_date('05.09.1882.', 'dd.mm.yyyy.'),'London',2);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(5,'Real Madrid C.F.',to_date('06.03.1902.', 'dd.mm.yyyy.'),'Madrid',3);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(6,'Atletico Madrid C.F.',to_date('26.04.1903.', 'dd.mm.yyyy.'),'Madrid',3);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(7,'Paris Saint-Germain F.C.',to_date('12.08.1970.', 'dd.mm.yyyy.'),'Pariz',4);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(8,'Olympique Lyonnais',to_date('12.08.1970.', 'dd.mm.yyyy.'),'Lion',4);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(9,'A.C.Milan',to_date('15.03.1899.', 'dd.mm.yyyy.'),'Milan',5);
+insert into tim(id,naziv,osnovan,sediste,liga)
+		values(10,'F.C.Internazionale Milano',to_date('09.03.1903.', 'dd.mm.yyyy.'),'Milan',5);
+
+
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(1,'Vujadin','Savic',2,to_date('01.07.1990.', 'dd.mm.yyyy.'),1,1);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(2,'Mitchel','Donald',1,to_date('10.12.1988.', 'dd.mm.yyyy.'),5,1);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(3,'Damien','Le Tallec',1,to_date('19.04.1990.', 'dd.mm.yyyy.'),4,1);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(4,'Zlatan','Ibrahimovic',1,to_date('03.10.1981.', 'dd.mm.yyyy.'),4,2);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(5,'Nemanja','Matic',1,to_date('01.08.1988.', 'dd.mm.yyyy.'),1,2);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(6,'Cristiano','Ronaldo',1,to_date('05.02.1985.', 'dd.mm.yyyy.'),9,3);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(7,'Neymar','Da Silva Santos Junior',1,to_date('05.02.1992.', 'dd.mm.yyyy.'),7,4);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(8,'Gianluigi','Donnarumma',1,to_date('25.02.1999.', 'dd.mm.yyyy.'),3,5);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(9,'Memphis','Depay',2,to_date('13.02.1994.', 'dd.mm.yyyy.'),5,4);
+insert into igrac(id,ime,prezime,broj_reg,datum_rodjenja,nacionalnost,tim)
+		values(10,'Sergio','Ramos',1,to_date('30.03.1986.', 'dd.mm.yyyy.'),6,3);

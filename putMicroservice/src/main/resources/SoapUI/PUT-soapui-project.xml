@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="32be25e1-8418-477d-b3ca-c20eb5900434" activeEnvironment="Default" name="PUT" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="65f76e5d-4acc-4dc8-b9b8-495ba689c48b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:9300" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:9300</con:endpoint></con:endpoints><con:resource name="/igrac" path="/igrac" id="16c963af-3fec-4563-a671-bab15c1fc8ad"><con:settings/><con:parameters/><con:method name="1" id="0f96ee1f-dd90-4f13-8a23-63d9798a9dae" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="cbd7dff8-74a4-4f2a-ab14-4d638a830370" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>  {
+      "id": 2,
+      "brojReg": "1",
+      "datumRodjenja": "1988-12-10",
+      "ime": "Mitchael",
+      "prezime": "Donald",
+      "nacionalnost":       {
+         "id": 5,
+         "naziv": "Netherlands",
+         "skracenica": "net"
+      },
+      "tim":       {
+         "id": 1,
+         "naziv": "FK Crvena zvezda",
+         "osnovan": "1945-03-04",
+         "sediste": "Beograd",
+         "liga":          {
+            "id": 1,
+            "naziv": "Premier League",
+            "oznaka": "PG"
+         }
+      }
+   }</con:request><con:originalUri>http://localhost/igrac</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="nacionalnost" path="/nacionalnost" id="0359edab-e968-4c20-aeb6-843fc811df81"><con:settings/><con:parameters/><con:method name="Method 1" id="67455d00-e885-4e4f-a034-5b17b08fd0a0" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>405</con:status><con:params/><con:element xmlns:nac="http://localhost/nacionalnost">nac:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="32228a64-4b56-4367-b03c-169f9896c939" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>{
+      "id": -39,
+      "naziv": "france",
+      "skracenica": "fr"
+   }</con:request><con:originalUri>http://localhost/nacionalnost</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="tim" path="/tim" id="cf0886cf-5214-449f-9f02-87f833313088"><con:settings/><con:parameters/><con:method name="Method 1" id="71076b1d-be7e-46b4-a055-f508e95296d2" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="cec429c1-af99-41a9-bb64-a14250debab0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>{
+      "id": -37,
+      "naziv": "Mladost Futog",
+      "osnovan": "1945-03-04",
+      "sediste": "Beograd",
+      "liga":       {
+         "id": 1,
+         "naziv": "Premier League",
+         "oznaka": "PG"
+      }
+   }</con:request><con:originalUri>http://localhost/tim</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="liga" path="/liga" id="0cc225b7-0cce-4d7c-a154-39c8e528386a"><con:settings/><con:parameters/><con:method name="Method 1" id="5e591d8c-9927-4b8b-96f3-8ddaca266f06" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="37db4584-a261-41b3-9eae-551a36811180" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9300</con:endpoint><con:request>{
+      "id": -35,
+      "naziv": "Srpska Liga",
+      "oznaka": "PG"
+   }</con:request><con:originalUri>http://localhost/liga</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

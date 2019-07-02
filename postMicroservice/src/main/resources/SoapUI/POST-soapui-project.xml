@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="395da565-ffc2-4792-907e-ba3f143d2e52" activeEnvironment="Default" name="POST" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c545a0a2-aa14-4056-91fb-101f3cad5eac" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:9200" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:9200</con:endpoint></con:endpoints><con:resource name="" path="/igrac" id="70549729-2f5c-41c2-a782-4e279094eb71"><con:settings/><con:parameters/><con:method name="1" id="10e27719-2b4b-4168-937e-f8df7f784457" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="d13ad655-6ca5-4332-ac23-479f7ec1436a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request>  {
+      "id": 2583,
+      "brojReg": "1",
+      "datumRodjenja": "1988-12-10",
+      "ime": "Mitchel",
+      "prezime": "Donald",
+      "nacionalnost":       {
+         "id": 5,
+         "naziv": "Netherlands",
+         "skracenica": "net"
+      },
+      "tim":       {
+         "id": 1,
+         "naziv": "FK Crvena zvezda",
+         "osnovan": "1945-03-04",
+         "sediste": "Beograd",
+         "liga":          {
+            "id": 1,
+            "naziv": "Premier League",
+            "oznaka": "PG"
+         }
+      }
+   }</con:request><con:originalUri>http://localhost/igrac</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="nacionalnost" path="/nacionalnost" id="4c0f0af5-1861-4256-affe-8746cc527c20"><con:settings/><con:parameters/><con:method name="Method 1" id="dbf05798-5ff7-4454-a1dc-028b575f0743" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="Request 1" id="4784aead-8a3f-4afe-9d5d-407fe5c45f49" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request>{
+      "id": 2583,
+      "naziv": "German",
+      "skracenica": "ger"
+   }</con:request><con:originalUri>http://localhost/nacionalnost</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="tim" path="/tim" id="65852974-7abf-464d-ac11-db837875f7d3"><con:settings/><con:parameters/><con:method name="Method 1" id="ce3b8bb3-ab01-4ae6-b912-6d8d3ddcaad3" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="8ddd65e2-8cb3-4232-a04c-11fdfe3121a0" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request> {
+      "id": 2583,
+      "naziv": "FK Crvena zvezda",
+      "osnovan": "1945-03-04",
+      "sediste": "Beograd",
+      "liga":       {
+         "id": 1,
+         "naziv": "Premier League",
+         "oznaka": "PG"
+      }
+   }</con:request><con:originalUri>http://localhost/tim</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="liga" path="/liga" id="452d5363-aca8-4b7d-b174-76ad1b2173d2"><con:settings/><con:parameters/><con:method name="Method 1" id="80d2f9b2-63f0-4bd5-97c2-d582c93e3951" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="e6352f76-8c80-4ead-bbc9-7434e798e594" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:9200</con:endpoint><con:request>{
+      "id": 2583,
+      "naziv": "Premier League",
+      "oznaka": "PG"
+   }</con:request><con:originalUri>http://localhost/liga</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
